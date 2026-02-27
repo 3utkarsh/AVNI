@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Avni 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #ffb6d9, #ffcce6, #ffd6f0);
+    overflow-x: hidden;
+    color: #fff;
+}
+
+/* Landing */
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #fff; }
+    to { text-shadow: 0 0 25px #ff69b4; }
+}
+
+button {
+    margin-top: 30px;
+    padding: 15px 35px;
+    border: none;
+    background: #ff69b4;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff1493;
+    transform: scale(1.1);
+}
+
+/* Message Section */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.message {
+    background: rgba(255, 105, 180, 0.4);
+}
+
+/* Full Screen Image Section */
+.full-screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 20, 147, 0.7);
+}
+
+.image-message {
+    margin-top: 25px;
+    background: rgba(255, 105, 180, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Final Section */
+.final {
+    background: rgba(255, 20, 147, 0.6);
+    font-size: 2.5rem;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 105, 180, 0.6);
+}
+
+/* Floating Hearts */
+.heart {
+    position: fixed;
+    bottom: -10px;
+    color: pink;
+    animation: floatUp 6s linear infinite;
+}
+/* Universal Image Styling */
+img {
+    width: 100%;
+    height: auto;              /* Keeps original ratio */
+    max-height: 80vh;          /* Prevents taking too much vertical space */
+    object-fit: contain;       /* Shows full image (no crop) */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Optional: If image is inside a container */
+.image-container img {
+    max-width: 100%;
+    max-height: 75vh;
+}
+/* Two Image Romantic Section */
+.double-memory {
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(255, 105, 180, 0.4);
+}
+
+.double-memory h2 {
+    margin-bottom: 40px;
+}
+
+.double-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.double-images img {
+    width: 45%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 20, 147, 0.6);
+    transition: transform 0.4s ease;
+}
+
+.double-images img:hover {
+    transform: scale(1.05);
+}
+/* Single Image Romantic Section */
+.single-memory {
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(255, 105, 180, 0.4);
+}
+
+.alt-bg {
+    background: rgba(255, 20, 147, 0.5);
+}
+
+.single-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.single-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 20, 147, 0.6);
+    margin-bottom: 25px;
+    transition: transform 0.4s ease;
+}
+
+.single-container img:hover {
+    transform: scale(1.05);
+}
+
+.single-message {
+    background: rgba(255, 105, 180, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .double-images img {
+        width: 90%;
+    }
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+/* Triple Gallery Section */
+.triple-gallery {
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(255, 105, 180, 0.4);
+}
+
+.triple-gallery h2 {
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.gallery-grid img,
+.gallery-grid video {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 20, 147, 0.6);
+    transition: transform 0.4s ease;
+}
+
+.gallery-grid img:hover,
+.gallery-grid video:hover {
+    transform: scale(1.05);
+}
+
+.gallery-message {
+    margin-top: 40px;
+    background: rgba(255, 105, 180, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Double Gallery Section */
+.double-gallery {
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(255, 20, 147, 0.5);
+}
+
+.double-gallery h2 {
+    margin-bottom: 40px;
+}
+
+.double-gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+}
+
+.double-gallery-grid img {
+    width: 45%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 20, 147, 0.6);
+    transition: transform 0.4s ease;
+}
+
+.double-gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.double-gallery-message {
+    margin-top: 40px;
+    background: rgba(255, 105, 180, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Single Video Section */
+.video-memory {
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(255, 105, 180, 0.4);
+}
+
+.video-memory h2 {
+    margin-bottom: 40px;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 20, 147, 0.7);
+    transition: transform 0.4s ease;
+}
+
+.video-container video:hover {
+    transform: scale(1.03);
+}
+
+.video-message {
+    margin-top: 40px;
+    background: rgba(255, 105, 180, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Full Screen Birthday Reveal */
+.birthday-reveal {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff8fd8, #ff4db8, #ff1f8f);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.reveal-btn {
+    padding: 18px 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 40px;
+    background: white;
+    color: #ff1493;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+.reveal-btn:hover {
+    transform: scale(1.1);
+    background: #ffe6f5;
+}
+
+.birthday-content {
+    margin-top: 40px;
+    max-width: 800px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+.birthday-content h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.birthday-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .double-gallery-grid img {
+        width: 90%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>This is a Gift for You 💝</h1>
+    <button onclick="startSurprise()">Click for Surprise 🎉</button>
+</header>
+
+<section id="message" class="message">
+    <h2>A Small Message 💌</h2>
+    <p>
+        Okk so maine socha tha ki ill make this website aise proper structered and all , but this is just utkarsh spamming random stuff for u. i hope u like it. and hnn ye structered ni but idk aapko achha lage kaash.
+    </p>
+</section>
+
+<!-- Full Screen Romantic Image Section -->
+<section class="full-screen">
+    <div class="image-container">
+        <img src="IMG_3405.PNG" alt="Avni's Photo">
+        <div class="image-message">
+            <h2>For You 💖</h2>
+            <p>
+                Ye lo aapke liye sunflower 🌻 , but but but ,(neeche scroll karo)
+            </p>
+        </div>
+    </div>
+</section>
+<section class="double-memory">
+    <h2> Sunflower Theory</h2>
+
+    <div class="double-images">
+        <img src="sunflower.jpeg" alt="Memory 1">
+        <img src="IMG_3406.PNG" alt="Memory 2">
+    </div>
+
+    <p>
+        I saw your like in this reel and isme likha tha ki jb bhi sunflower kisi ko do to ek mat do. to ye lo. 
+    </p>
+</section>
+<!-- Romantic Section 1 -->
+<section class="single-memory">
+    <div class="single-container">
+        <img src="Medal.jpeg" alt="Special Memory">
+        <div class="single-message">
+            <h2>The Golden Girl</h2>
+            <p>
+                Ik u are that golden girl ,(silver accessories maa chudaye) to ye lo aapke liye gold , khair ye to mai aapko ek baar bhej chuka hu (i prayed soo much uss din tere jitne ke liye).
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Romantic Section 2 -->
+<section class="single-memory alt-bg">
+    <div class="single-container">
+        <img src="clover.jpeg" alt="Beautiful Moment">
+        <div class="single-message">
+            <h2>Clover</h2>
+            <p>
+                And mai uss din ki tarah , hamesha wish karunga ye clover teri life me lucky rahe.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- Full Screen Photo Intro Section -->
+<section class="photo-intro">
+    <div class="photo-intro-content">
+        <h1>Let’s See Some Photos 📸</h1>
+        <p>
+            Every picture tells a story…  
+            and every story with you is my favorite one. 💖
+        </p>
+
+        <button onclick="goToSpecial()">See More 💕</button>
+    </div>
+</section>
+<!-- Special Photo Section -->
+<section id="special-photo" class="single-memory alt-bg">
+    <div class="single-container">
+        <img src="Self_society.jpeg" alt="Special Memory">
+        <div class="single-message">
+            <h2>Self and Society Ka eXam</h2>
+            <p>
+                Ig this our first photo together , and i love this photo . although self and society me marks ni aaye but okay , this day waas soo fun bhyiii and tu kitni different lgri hai isme , demnnn!!!! and mai chutiya lgra hu.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- Romantic Gallery Section -->
+<section class="triple-gallery">
+    <h2>SEM 1 END💕</h2>
+
+    <div class="gallery-grid">
+        <img src="sem1end.jpeg" alt="Memory 1">
+        <img src="sem1end2.jpeg" alt="Memory 2">
+        <img src="sem1end3.jpeg" alt="Memory 3">
+
+        <!-- Video Option -->
+        <video controls>
+            <source src="sem1end4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <p class="gallery-message">
+        okkkk , and aise hi humara semester bhi end ho gaya wowwwwww , and honestly u were the best thing happened to me in semester 1 . bhai ye hum dono ke saath wali photo , demnn mai harr photo me itna chutiya kaise dikh skta hu , and dil ne kitna chidaya tha iss pe .
+    </p>
+</section>
+<!-- Romantic Double Photo Section -->
+<section class="double-gallery">
+    <h2>Meri Favourite Photo💞</h2>
+
+    <div class="double-gallery-grid">
+        <img src="videocall.jpeg" alt="Beautiful Memory 1">
+        <img src="videocall1.jpeg" alt="Beautiful Memory 2">
+    </div>
+
+    <p class="double-gallery-message">
+        bhaiii besttt photoooo!!!!!!!!!!.... remember hum 4-4 baje tak meet pe baat krte the , i loved it , i lovet every minute of that call . and maine ye gndi si photo kheechli thi teri heheheheehehhe!!!.
+    </p>
+</section>
+<!-- Romantic Video Section -->
+<section class="video-memory">
+    <h2>Best Day Break kaa</h2>
+
+    <div class="video-container">
+        <video controls poster="thumbnail.jpg">
+            <source src="NSP.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <p class="video-message">
+        This was the best Day poore break kaa bhai ... and iske baare me mai bohot baar bohot kuchh bol chuke hu but still , ill never forget this day ... Totally loved it ... Thank u uss din aane ke liye ... and uss MCFlurry ke liye bhi..... bhai treat jab tu de to jyada tasty lgti 😋.
+        (and video quality thodi si chud gayi)
+    </p>
+</section>
+<!-- Extra Romantic Section (No Heading) -->
+<section class="single-memory">
+    <div class="single-container">
+        <img src="coolllll.jpeg" alt="Special Moment">
+        <div class="single-message">
+            <p>
+                ommggggg avniiiiiii, you are soooo coooollllllll.... this photo is soo cute , and funny at the same time , u look soo cute in this for some reason.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- Extra Romantic Section (No Heading) -->
+<section class="single-memory">
+    <div class="single-container">
+        <img src="ICard.jpeg" alt="Special Moment">
+        <div class="single-message">
+            <p>
+              Avni ki id card wali photo jo wo hamesha mere haath se chheen leti hai (although usse pehle khud hi pakdati hai ki ye le mera phone icard sambhal ke rakhio), but khair agar mai aisi photos kheechunga to wapas chhen naa samajh aata hai. and this photo is also not bad yarr , this is also a nice photo.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- Extra Romantic Section (No Heading) -->
+<section class="single-memory">
+    <div class="single-container">
+        <img src="avnipriyanka.jpeg" alt="Special Moment">
+        <div class="single-message">
+            <p>
+               Yayayayay priyannka ka cameo , u both look soo funny in this bhai , ye photo to mujhe pata bhi ni chala kab kheech li tum logo ne.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- Extra Romantic Video Section (No Heading) -->
+<section class="video-memory alt-bg">
+    <div class="video-container">
+        <video controls poster="thumbnail.jpg">
+            <source src="mess.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="video-message">
+            <p>
+               Ye video hai avni irritation utkarsh , mai beemar lgra hu isme ngl.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="single-memory">
+    <div class="single-container">
+        <img src="Contact.jpeg" alt="Special Moment">
+        <div class="single-message">
+            <p>
+                This is that blue colour jo tune mere number pe laga rakha hai , i love this colour , and hnn mat hi laga ispe tu koi photo kyuki mujhe achha lgta hai ye.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- Extra Romantic Double Video Section (No Heading) -->
+<section class="video-memory">
+    <div class="video-container" style="display: flex; gap: 30px; flex-wrap: wrap; justify-content: center;">
+        
+        <video controls style="width: 45%; max-width: 400px;" poster="thumb1.jpg">
+            <source src="walk 1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <video controls style="width: 45%; max-width: 400px;" poster="thumb2.jpg">
+            <source src="walk 2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </div>
+
+    <div class="video-message">
+        <p>
+            I love these walks. and iss jagah pe khaskar , itti shaant jagah hoti hia ye raat ko and hum dono kisi random topic pe hi baat karre honge , although aajkal wo topic achha ni hota koi but koi baat ni.
+        </p>
+    </div>
+</section>
+<!-- Extra Romantic Image + Video Section (No Heading) -->
+<section class="video-memory alt-bg">
+    
+    <div class="video-container" style="display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; align-items: center;">
+        
+        <!-- Image -->
+        <img src="avni haircut.jpeg" 
+             alt="Special Moment" 
+             style="width: 45%; max-width: 400px; border-radius: 20px; box-shadow: 0 0 25px rgba(255, 20, 147, 0.6); transition: transform 0.4s ease;"
+             onmouseover="this.style.transform='scale(1.05)'"
+             onmouseout="this.style.transform='scale(1)'">
+
+        <!-- Video -->
+        <video controls 
+               style="width: 45%; max-width: 400px; border-radius: 20px; box-shadow: 0 0 25px rgba(255, 20, 147, 0.6); transition: transform 0.4s ease;" 
+               onmouseover="this.style.transform='scale(1.03)'"
+               onmouseout="this.style.transform='scale(1)'">
+            <source src="avni haricut 1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </div>
+
+    <div class="video-message">
+        <p>
+           avni ka haircuttt, i love this hairstyle tera . this is soo sooo sooooo pretty bhaiiiii. and u look so innocent and pyaari si in this video and image .. 
+        </p>
+    </div>
+
+</section>
+<!-- Full Screen Birthday Reveal Section -->
+<section class="birthday-reveal">
+
+    <button class="reveal-btn" onclick="revealBirthdayMessage()">
+        Open This 💝
+    </button>
+
+    <div class="birthday-content" id="birthdayContent">
+        <h1>Happy Birthday Avni 💖🎂</h1>
+        <p>
+            ik humari journey bohot wierd rahi hai . hum achhe dost the but bohot kuchh hua , but jo bhi hua , atlast hum wo hi hai AVNI and UTKARSH .... and i hope hamesha wo hi rahe , and u are finally 18 ab tere pe koi jokes ni maarega teenager waale .. wowwww..... maine bohot pareshan kara hia naa tujhe , sorry ni bolunga cuz tu maaregi mujhe pakad ke abki baar to ki bas kr saale , but samajh jaana , abhi 3 saal bache hai college ke , toooo avni bhambani , lets be wo wale friends again , UTKARSH and AVNI wale ...... Avni teri aage ki life me mai hu yaa naa hu , (ye wala part sounds thoda sa sad for some reason) but i do hope u will be happy , u will be a yapper poori life apni , mera to clover hamesha tere liye lucky rahe , tu hamesha wo golden girl banke rahe , and tu hamesha AVNI hi rahe.
+
+            Happy Birthday, Avni.  
+            You mean more than you know.
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    Made with 💗 for Avni
+</footer>
+
+<script>
+function startSurprise() {
+    confetti();
+    document.getElementById("message").scrollIntoView({behavior: "smooth"});
+}
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = Math.random() * 20 + 10 + "px";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 6000);
+}
+setInterval(createHeart, 500);
+
+function confetti() {
+    for (let i = 0; i < 120; i++) {
+        const conf = document.createElement("div");
+        conf.style.position = "fixed";
+        conf.style.width = "8px";
+        conf.style.height = "8px";
+        conf.style.background = "hsl(" + Math.random() * 360 + ", 100%, 50%)";
+        conf.style.top = "-10px";
+        conf.style.left = Math.random() * 100 + "vw";
+        conf.style.animation = "fall 3s linear forwards";
+        document.body.appendChild(conf);
+        setTimeout(() => conf.remove(), 3000);
+    }
+}
+
+const style = document.createElement('style');
+style.innerHTML = `
+@keyframes fall {
+    to { transform: translateY(100vh) rotate(720deg); }
+}`;
+document.head.appendChild(style);
+function goToSpecial() {
+    document.getElementById("special-photo").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+function revealBirthdayMessage() {
+    const content = document.getElementById("birthdayContent");
+    content.style.opacity = "1";
+    content.style.transform = "translateY(0)";
+}
+</script>
+
+</body>
+</html>
